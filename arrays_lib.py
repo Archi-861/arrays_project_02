@@ -35,8 +35,17 @@ def max_1d(array):
             max_elem = array[i]
     return max_elem
 
+
+def min_1d(array):
+    min_elem = array[0]
+    for i in range(len(array)):
+        if array[i] < min_elem:
+            min_elem = array[i]
+    return min_elem
+
 print(array)
 print(sum_1d(array))
 print(prod_1d(array))
 print(mean_1d(array))
 print(max_1d(array))
+print(min_1d(array))
