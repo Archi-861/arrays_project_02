@@ -21,6 +21,13 @@ def prod_1d(array):
         prod *= i
     return prod
 
+
+def mean_1d(array):
+    mean = sum_1d(array) / len(array)
+    mean = round(mean, 2)
+    return mean
+
 print(array)
 print(sum_1d(array))
 print(prod_1d(array))
+print(mean_1d(array))
