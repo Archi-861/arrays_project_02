@@ -27,7 +27,16 @@ def mean_1d(array):
     mean = round(mean, 2)
     return mean
 
+
+def max_1d(array):
+    max_elem = array[0]
+    for i in range(len(array)):
+        if array[i] > max_elem:
+            max_elem = array[i]
+    return max_elem
+
 print(array)
 print(sum_1d(array))
 print(prod_1d(array))
 print(mean_1d(array))
+print(max_1d(array))
