@@ -67,6 +67,15 @@ def sum_2d(matrix):
     return summ_matr
 
 
+def prod_2d(matrix):
+    prod_matr = 1
+    for  row in matrix:
+        for elem in row:
+            prod_matr *= elem
+    return prod_matr
+
+
 for i in matrix:
     print(*i)
 print(sum_2d(matrix))
+print(prod_2d(matrix))
