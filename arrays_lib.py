@@ -75,7 +75,15 @@ def prod_2d(matrix):
     return prod_matr
 
 
+def mean_2d(matrix):
+    lenn_matr = matrix_row * matrix_col
+    mean_matr = sum_2d(matrix) / lenn_matr
+    mean_matr = round(mean_matr, 2)
+    return mean_matr
+
+
 for i in matrix:
     print(*i)
 print(sum_2d(matrix))
 print(prod_2d(matrix))
+print(mean_2d(matrix))
