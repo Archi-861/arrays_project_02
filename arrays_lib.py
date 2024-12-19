@@ -91,9 +91,19 @@ def max_2d(matrix):
     return max_elem_matr
 
 
+def min_2d(matrix):
+    min_elem_matr = 0
+    for i in range(matrix_row):
+        for j in range(matrix_col):
+            if min_elem_matr > matrix[i][j]:
+                min_elem_matr = matrix[i][j]
+    return min_elem_matr
+
+
 for i in matrix:
     print(*i)
 print(sum_2d(matrix))
 print(prod_2d(matrix))
 print(mean_2d(matrix))
 print(max_2d(matrix))
+print(min_2d(matrix))
