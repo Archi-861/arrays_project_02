@@ -82,8 +82,18 @@ def mean_2d(matrix):
     return mean_matr
 
 
+def max_2d(matrix):
+    max_elem_matr = 0
+    for i in range(matrix_row):
+        for j in range(matrix_col):
+            if max_elem_matr < matrix[i][j]:
+                max_elem_matr = matrix[i][j]
+    return max_elem_matr
+
+
 for i in matrix:
     print(*i)
 print(sum_2d(matrix))
 print(prod_2d(matrix))
 print(mean_2d(matrix))
+print(max_2d(matrix))
