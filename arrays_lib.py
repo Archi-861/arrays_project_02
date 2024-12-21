@@ -71,6 +71,24 @@ def sum_arrays(array1, array2):
     return array_res
 
 
+def compare_arrays(array1, array2):
+    name = 'compare_arrays'
+    log_action(name)
+    arrays_same = []
+    array1_larger = []
+    array2_larger = []
+    if check_array(array1, array2) == True:
+        for i in range(len(array1)):
+            arrays_same.append(array1[i] == array2[i])
+            array1_larger.append(array1[i] > array2[i])
+            array2_larger.append(array1[i] < array2[i])
+    else:
+        print('Заданные массивы имеют разное количество элементов')
+
+    return arrays_same, array1_larger, array2_larger
+
+
+
 # print(sum_1d(array1))
 # print(prod_1d(array1))
 # print(mean_1d(array1))

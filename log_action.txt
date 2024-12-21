@@ -1,0 +1,6 @@
+Perfoming compare_arrays on array1 and array2 21-12-2024 22:46:13
+Perfoming compare_arrays on array1 and array2 21-12-2024 22:47:35
+Perfoming compare_arrays on array1 and array2 21-12-2024 22:49:58
+Perfoming compare_arrays on array1 and array2 21-12-2024 22:50:22
+Perfoming compare_arrays on array1 and array2 21-12-2024 22:51:23
+Perfoming compare_arrays on array1 and array2 21-12-2024 22:51:33
