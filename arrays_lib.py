@@ -1,5 +1,7 @@
 from random import randint
 
+from logger import log_action
+
 array1 = []
 array2 = []
 
@@ -59,6 +61,8 @@ def check_array(array1, array2):
 
 
 def sum_arrays(array1, array2):
+    name = 'sum_arrays'
+    (log_action(name))
     array_res = []
     if check_array(array1, array2) == True:
         array_res = [array1[i] + array2[i] for i in range(len(array1))]
@@ -66,9 +70,7 @@ def sum_arrays(array1, array2):
         array_res = 'Заданные массивы имеют разное количество элементов'
     return array_res
 
-print(array1)
-print(array2)
-print(sum_arrays(array1, array2))
+
 # print(sum_1d(array1))
 # print(prod_1d(array1))
 # print(mean_1d(array1))
