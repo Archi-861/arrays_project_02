@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Perfoming diff_arrays on array1 and array2 21-12-2024 21:54:59
+=======
+Perfoming prod_arrays on array1 and array2 21-12-2024 22:10:16
+>>>>>>> feature/prod_arrays

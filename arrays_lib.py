@@ -82,6 +82,16 @@ def diff_arrays(array1, array2):
     return array_res
 
 
+def prod_arrays(array1, array2):
+    name = 'prod_arrays'
+    log_action(name)
+    array_res = []
+    if check_array(array1, array2) == True:
+        array_res = [array1[i] * array2[i] for i in range(len(array1))]
+    else:
+        array_res = 'Заданные массивы имеют разное количество элементов'
+    return array_res
+
 
 # print(sum_1d(array1))
 # print(prod_1d(array1))
