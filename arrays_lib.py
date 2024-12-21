@@ -62,7 +62,7 @@ def check_array(array1, array2):
 
 def sum_arrays(array1, array2):
     name = 'sum_arrays'
-    (log_action(name))
+    log_action(name)
     array_res = []
     if check_array(array1, array2) == True:
         array_res = [array1[i] + array2[i] for i in range(len(array1))]
