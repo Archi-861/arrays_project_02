@@ -6,7 +6,9 @@ array1 = []
 array2 = []
 
 num1 = int(input('Введите количество элементов первого массива >> '))
+value1 = int(input('Введите значение-критерий для последующего отбора первого массива >> '))
 num2 = int(input('Введите количество элементов второго массива >> '))
+value2 = int(input('Введите значение-критерий для последующего отбора второго массива >> '))
 
 for i in range(num1):
     a = randint(-10, 11)
@@ -110,6 +112,32 @@ def compare_arrays(array1, array2):
     return arrays_same, array1_larger, array2_larger
 
 
+def filter_greater(array1, array2, value1, value2):
+    name = 'filter_greater'
+    log_action(name)
+    array1_larger_filter = []
+    array2_larger_filter = []
+    for i in range(len(array1)):
+        if array1[i] > value1:
+            array1_larger_filter.append(array1[i])
+    for i in range(len(array2)):
+        if array2[i] > value2:
+            array2_larger_filter.append(array2[i])
+    return array1_larger_filter, array2_larger_filter
+
+
+def filter_equal(array1, array2, value1, value2):
+    name = 'filter_equal'
+    log_action(name)
+    array1_smaller_filter = []
+    array2_smaller_filter = []
+    for i in range(len(array1)):
+        if array1[i] > value1:
+            array1_smaller_filter.append(array1[i])
+    for i in range(len(array2)):
+        if array2[i] > value2:
+            array2_smaller_filter.append(array2[i])
+    return array1_smaller_filter, array2_smaller_filter
 # print(sum_1d(array1))
 # print(prod_1d(array1))
 # print(mean_1d(array1))

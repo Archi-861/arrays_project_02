@@ -1,4 +1,0 @@
-Perfoming sum_arrays on array1 and array2 21-12-2024 23:35:51
-Perfoming compare_arrays on array1 and array2 21-12-2024 23:35:51
-Perfoming diff_arrays on array1 and array2 21-12-2024 23:35:51
-Perfoming prod_arrays on array1 and array2 21-12-2024 23:35:51
